@@ -1,0 +1,90 @@
+html {
+    background-color: rgba(66, 66, 122, 0.836);
+    background-image: url("images/background1.jpg"); /* Use url() for background images */
+    background-size: cover; /* Ensure the image covers the entire background */
+* {
+    margin: 0; /* Reset margins for all elements */
+    padding: 0; /* Reset padding for all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+section, footer, title, p, body {
+    margin: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .styled-section {
+    padding: 50px;
+    border: 2px solid #3f4144; /* Border around the section */
+    background-color: #3d3fb680;; /* Background color */
+    text-align: center; /* Center the text */
+    margin: 300px;
+
+   
+  }
+
+body {
+    margin: 0; /* Ensure the body has no default margin */
+    line-height: 1.2; /* Adjust as needed */
+ 
+}
+
+nav {
+    text-align: center;
+    margin: 100px; /* Space outside the nav */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.btn, .btn-2 {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    text-align: center;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #2e3647;
+    background-image: radial-gradient(200% 70% at center 20%, rgba(102, 110, 187, 0.719) -30%, rgba(50, 46, 47, 1) 49%, rgba(22, 18, 19, 1) 50%, rgba(22, 18, 19, 1) 150%);
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+}
+
+.btn:hover, .btn-2:hover span {
+    background-position-y: -50px; /* Hover effect for background */
+}
+
+.btn-2 {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6)); /* Drop shadow effect */
+}
+
+.btn-2 span {
+    display: inline-block; /* Ensures span takes space */
+    padding: 15px 30px; /* Padding for the span */
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%); /* Same hexagonal shape */
+    background-color: #161213; /* Background color to match */
+    background-image: radial-gradient(200% 70% at center 20%, rgba(48, 44, 45, 1) -30%, rgba(50, 46, 47, 1) 49%, rgba(22, 18, 19, 1) 50%, rgba(22, 18, 19, 1) 150%);
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+}
+
+.content {
+    padding: 40px; /* Space inside the box */
+    background-color: #1c202bf1; /* Same base color as buttons */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center the text */
+    margin: 20px auto; /* Center the box */
+    max-width: 800px; /* Set a max width for the box */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: add a shadow for depth */
+}
+
+
